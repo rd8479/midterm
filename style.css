@@ -2,6 +2,10 @@
 body{
     background-color:rgb(44, 38, 38)
 }
+a{
+    color:black;
+    text-decoration: none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -79,3 +83,16 @@ body{
         left: 100%;
     }
 } */
+.sign_in{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.enter , .signin{
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 2px 10px;
+}
