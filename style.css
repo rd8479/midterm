@@ -59,15 +59,12 @@ body{
 .btn{
     position: absolute;
     top: 0;
-    left: 36%;
-    transform: translate(-100%);
+    left: 0;
     background-color:aliceblue ;
     border:none;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    animation-name:move_btn ;
-    animation-duration: 1.5s;
 }
 /* .btn:focus{
     animation-name:move_btn ;
