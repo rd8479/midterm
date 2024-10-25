@@ -36,20 +36,49 @@ body{
     font-weight: 600;
 }
 .dark_light{
-    display: flex;
-    align-items: center;
-    border: solid 3px rgba(90,90,90,.7);
+    position: relative;
+    width: 90px;
+    height: 36px;
+    border: solid 3px rgba(90,90,90,1);
     border-radius:30px ;
 }
 .moon , .sun{
+    position: absolute;
     background-color: transparent;
     border:none;
     width: 20px;
 }
+.moon{
+    top: 2%;
+    right: 7%;
+}
+.sun{
+    top: 15%;
+    left: 7%;
+}
 .btn{
+    position: absolute;
+    top: 0;
+    left: 36%;
+    transform: translate(-100%);
     background-color:aliceblue ;
     border:none;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    animation-name:move_btn ;
+    animation-duration: 1.5s;
 }
+/* .btn:focus{
+    animation-name:move_btn ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move_btn{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+} */
