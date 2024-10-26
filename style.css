@@ -27,16 +27,15 @@ a{
 }
 .bg_left_back,.bg_right_back {
     position: absolute;
-    top: -90px;
-    left: -90px;
-    width: 774px;
+    top: -66px;
+    left: -260px;
+    width: 520px;
     height: 691px;
     background-image: url(./assist/image/back_one_head.png);
 }
 .bg_right_back {
-    left: auto;
-    top: -200px;
-    right: -400px;
+    top: -320px;
+    right: -263px;
     height: 607px;
     background-image: url(./assist/image/back_two_head.webp);
 }
