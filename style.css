@@ -123,12 +123,24 @@ a{
     display: none;
 }
 .hamberger_bar:focus ~ .bar{
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     height: 500px;
-    background-color: aqua;
     position: fixed;
     top:0;
     right: 0;
     z-index: 2;
+    background-color: black;
+}
+.logo_exit{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: orangered;
+    align-self: end;
+}
+.items{
+    color: aliceblue;
+    font-size: x-large;
 }
