@@ -116,6 +116,7 @@ a{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    position: relative;
     padding: 16px 0 16px 20px;
     margin-top: 12px;
     background-color: rgba(34, 34, 34, .9);;
@@ -131,6 +132,11 @@ a{
 .search_bar::placeholder{
     font-size: 1.25rem;
     padding-right: 10px;
+}
+.search_icon{
+    position: absolute;
+    top: 33%;
+    left: 5%;
 }
 .hamberger_bar{
     flex-grow: .6;
