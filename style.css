@@ -93,7 +93,7 @@ a{
     justify-content: center;
     gap: 20px;
 }
-.enter_icon{
+.enter_icon,.add_person{
     vertical-align: middle;
     margin: 2px;
 }
