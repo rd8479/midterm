@@ -1,6 +1,6 @@
 @import url(./assist/fontawesome-free-6.6.0-web/css/all.css);
 body{
-    background-color:rgb(44, 38, 38);
+    background-color:black;
     overflow: hidden;
 }
 a{
@@ -133,9 +133,8 @@ a{
     padding-right: 10px;
 }
 .hamberger_bar{
-    flex-grow: 1;
-    align-self: center;
-    text-align: center;
+    flex-grow: .6;
+    margin-right: 10px;
 }
 .bar{
     display: none;
