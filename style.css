@@ -1,7 +1,6 @@
 @import url(./assist/fontawesome-free-6.6.0-web/css/all.css);
 body{
     background-color:black;
-    overflow: hidden;
 }
 a{
     color:black;
@@ -202,23 +201,38 @@ a{
     margin-top: 10px;
 }
 .carser{
-    max-width: 520px;
-    overflow: hidden;
-    background-color: wheat;
-    white-space: nowrap;
-}
-.parent{
-    display: inline-block;
-    background-color: aqua;
-    animation: 3ms slides  linear;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: slides 60s linear infinite;
+    margin: 100px 0;
 }
 @keyframes slides {
     from{
-        transform: translateX(0);
+        transform: perspective(1000px) rotateY(0deg);
     }
     to{
-        transform: translateX(100%);
+        transform: perspective(1000px) rotateY(360deg);
     }
+}
+.rotate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(200px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#000004);
+}
+.image_rotate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: contain;
 }
