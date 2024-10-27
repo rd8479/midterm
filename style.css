@@ -152,7 +152,8 @@ a{
     flex-direction: column;
     position: relative;
     width: 90vw;
-    height: 500px;
+    height: 100vh;
+    max-width: 468px;
     position: fixed;
     top:0;
     right: 0;
