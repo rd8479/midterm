@@ -148,7 +148,8 @@ a{
 .hamberger_bar:focus ~ .bar{
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    position: relative;
+    width: 90vw;
     height: 500px;
     position: fixed;
     top:0;
@@ -157,15 +158,29 @@ a{
     background-color: black;
 }
 .logo_exit{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    background-color: orangered;
-    align-self: end;
+    background-color: #eb8307;
+}
+.cross
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}.logo_site{
+    margin: 10px 120px;
 }
 .items{
     color: aliceblue;
-    font-size: x-large;
+    font-size: large;
+    line-height: 2.65rem;
+    border-bottom: 1px solid rgb(43, 41, 41);
+    padding-right: 16px;
 }
 .main{
     display: flex;
