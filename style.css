@@ -201,3 +201,19 @@ a{
     color: orangered;
     margin-top: 10px;
 }
+.carser{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.parent{
+    display: inline-block;
+    animation: 35s slides infinite linear;
+}
+@keyframes slides {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
