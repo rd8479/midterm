@@ -203,15 +203,16 @@ a{
 }
 .carser{
     max-width: 520px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
     overflow: hidden;
+    background-color: wheat;
     white-space: nowrap;
 }
 .parent{
     display: inline-block;
-    animation: 35s slides infinite linear;
+    background-color: aqua;
+    animation: 3ms slides  linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
 @keyframes slides {
     from{
