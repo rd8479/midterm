@@ -125,7 +125,7 @@ input{
     position: relative;
     padding: 16px 0 16px 20px;
     margin-top: 12px;
-    background-color: rgba(34, 34, 34, .9);;
+    background-color: rgba(34, 34, 34, .9);
 }
 .search_bar{
     background-color: black;
@@ -288,4 +288,27 @@ input{
 .sq:nth-child(1){
     top: 0;
     left: 0;
+}
+.span{
+    width: 44px;
+    height: 24px;
+    border-radius: 30px;
+    border: solid #fcfcfc 4px;
+    margin-right: 4px;
+}
+.p-{
+    font-weight: 300;
+    font-size: medium;
+}
+.rad{
+    width: 12px;
+    height: 12px;
+    transform: translate(-170% ,16%);
+    border-radius: 50%;
+    background-color: #fcfcfc;
+}
+.search_icon2{
+    width: 16px;
+    top: 37%;
+    right: 30%;
 }
