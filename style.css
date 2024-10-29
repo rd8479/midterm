@@ -327,11 +327,38 @@ input{
     border-radius: 12px;
     transform: translateY(-8px);
 }
+.icons{
+    display: flex;
+    gap: 8px;
+}
 .right{
     position: relative;
 }
 .right>img:nth-child(2){
     position: absolute;
-    top: 30%;
-    left: 75%;
+    top: 10%;
+    left: 80%;
+}
+.strong{
+    font-size:20px ;
+    color: #eb8307;
+    font-weight: bold;
+    font-family: serif;
+}
+.small{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: serif;
+    color: #fff;
+}
+.imdb{
+    width: 50px;
+    color: #fff;
+    background-color: #eb8307;
+    padding: 4px;
+    border-radius: 10px;
+    font-family: serif;
+    font-weight: 700;
+    justify-self: end;
+    margin: 4px;
 }
