@@ -327,3 +327,11 @@ input{
     border-radius: 12px;
     transform: translateY(-8px);
 }
+.right{
+    position: relative;
+}
+.right>img:nth-child(2){
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
