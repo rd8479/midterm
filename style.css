@@ -395,10 +395,12 @@ footer{
     flex-direction: column;
 }
 .telegram{
+    width: 85%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     padding: 10px 0;
     background-color:#212121;
+    border-radius: 12px;
 }
