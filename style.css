@@ -51,30 +51,19 @@ input{
     width: 100%;
 }
 .dark_light{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 90px;
     height: 34px;
     background-color:#252525;
     border-radius:30px ;
 }
-.moon , .sun{
-    position: absolute;
+.moon{
     background-color: transparent;
     border:none;
     width: 20px;
 }
-.moon{
-    top: 7%;
-    right: 7%;
-}
-.sun{
-    top: 15%;
-    left: 7%;
-}
 .btn{
-    position: absolute;
-    top: 2px;
-    left: 2px;
     background-color:#fff ;
     border:none;
     width: 30px;
@@ -111,7 +100,7 @@ input{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    position: relative;
+    align-items: center;
     padding: 16px 0 16px 20px;
     margin: 12px auto 0 auto;
     background-color: rgba(34, 34, 34, .9);
@@ -130,9 +119,7 @@ input{
     padding-right: 10px;
 }
 .search_icon{
-    position: absolute;
-    top: 33%;
-    left: 5%;
+    transform: translate(150%,-20%);
 }
 .hamberger_bar{
     flex-grow: .6;
@@ -401,4 +388,49 @@ footer{
     padding: 10px 0;
     background-color:#212121;
     border-radius: 12px;
+}
+@media screen and (min-width:520px) {
+    .countainer{
+        margin: 0;
+        max-width: 1580px;
+    }
+    .bg_left_back,.bg_right_back{
+        width: 1580px;
+    }
+    .bg_left_back,.bg_right_back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 520px;
+        height: 607px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg_right_back {
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .header{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 50px;
+        margin: 15px 20px;
+    }
+    .dark_light{
+        display: inline-flex;
+    }
+    .div_dark{
+        display: flex;
+        justify-content: end;
+        flex-grow: 2;
+    }
+    .sign_in{
+        width: auto;
+    }
+    .signin,.enter{
+        margin: 0;
+    }
 }
