@@ -433,4 +433,20 @@ footer{
     .signin,.enter{
         margin: 0;
     }
+    .btn_1{
+        width: 130px;
+    }
+    .main{
+        max-width: 1580px;
+    }
+    .carser{
+        width: 400px;
+    }
+    .filter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shape{
+        width: auto;
+    }
 }
