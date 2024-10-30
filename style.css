@@ -1,6 +1,6 @@
-@import url(./assist/fontawesome-free-6.6.0-web/css/all.css);
 body{
     background-color:black;
+    overflow-x: hidden;
 }
 a{
     color:black;
@@ -16,13 +16,11 @@ input{
     box-sizing: border-box;
 }
 .countainer{
-    max-width: 520px;
+    max-width:520px;
     margin-left: auto;
     margin-right: auto;
-    width: 100vw;
 }
 .header{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +36,7 @@ input{
 .bg_left_back,.bg_right_back {
     position: absolute;
     top: -66px;
-    left: -260px;
+    left: -263px;
     width: 520px;
     height: 691px;
     background-image: url(./assist/image/back_one_head.png);
@@ -109,13 +107,13 @@ input{
     color: #fff;
 }
 .search{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
     padding: 16px 0 16px 20px;
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
     background-color: rgba(34, 34, 34, .9);
 }
 .search_bar{
@@ -198,7 +196,7 @@ input{
 }
 .carser{
     position: relative;
-    width: 200px;
+    width: 90%;
     height: 200px;
     transform-style: preserve-3d;
     animation: slides 60s linear infinite;
