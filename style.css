@@ -394,7 +394,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.telegram{
+.telegram_instagram{
     width: 85%;
     display: flex;
     justify-content: space-evenly;
