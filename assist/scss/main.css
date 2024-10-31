@@ -60,13 +60,13 @@ input {
   left: -263px;
   width: 520px;
   height: 691px;
-  background-image: url(./assist/image/back_one_head.png);
+  background-image: url(../image/back_one_head.png);
 }
 .header__BgBackHead__right {
   top: -320px;
   right: -263px;
   height: 607px;
-  background-image: url(./assist/image/back_two_head.webp);
+  background-image: url(../image/back_two_head.webp);
 }
 .header__divDark__dark {
   display: flex;
@@ -227,6 +227,42 @@ input {
   border-radius: 12px;
 }
 
+.main {
+  background-color: #252525;
+}
+.main__title {
+  display: flex;
+  gap: 4px;
+  margin: 12px 0;
+}
+.main__title__p {
+  font-size: 1.15rem;
+  font-weight: 300;
+  font-family: serif;
+  color: #fcfcfc;
+}
+.main__title2 {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+}
+.main__title2__h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: serif;
+  color: #fcfcfc;
+  border-bottom: #eb8307 solid 4px;
+  padding: 12px;
+}
+.main__title2__h3 {
+  font-size: 1.15rem;
+  font-weight: 300;
+  font-family: serif;
+  color: #df5900;
+}
+
 .p- {
   font-weight: 300;
   font-size: medium;
@@ -236,6 +272,6 @@ input {
   display: inline-block;
   font-size: large;
   color: #fcfcfc;
-  font-family: sans-serif;
+  font-family: serif;
   margin-right: 8px;
 }

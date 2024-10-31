@@ -40,13 +40,13 @@ input{
             left: -263px;
             width: 520px;
             height: 691px;
-            background-image: url(./assist/image/back_one_head.png);
+            background-image: url(../../image/back_one_head.png);
         }
         &__right{
             top: -320px;
             right: -263px;
             height: 607px;
-            background-image: url(./assist/image/back_two_head.webp);
+            background-image: url(../../image/back_two_head.webp);
         }
     }
     &__divDark{
@@ -184,7 +184,7 @@ input{
             top:0;
             right: 0;
             z-index: 2;
-            background-color: black;   
+            background-color: black;  
         }
     }
 }
@@ -211,6 +211,41 @@ input{
         }
     }
 }
+.main{
+    background-color: #252525;
+    &__title{
+        display: flex;
+        gap: 4px;
+        margin: 12px 0;
+        &__p{
+            font-size: 1.15rem;
+            font-weight: 300;
+            font-family: serif;
+            color: #fcfcfc;
+        }
+    }
+    &__title2{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+        &__h2{
+            font-size: 1.25rem;
+            font-weight: 600;
+            font-family: serif;
+            color: #fcfcfc;
+            border-bottom: #eb8307 solid 4px;
+            padding: 12px ;
+        }
+        &__h3{
+            font-size: 1.15rem;
+            font-weight: 300;
+            font-family: serif;
+            color:#df5900;
+        }
+    }
+}
 .p-{
     font-weight: 300;
     font-size: medium;
@@ -219,6 +254,6 @@ input{
     display: inline-block;
     font-size: large;
     color: #fcfcfc;
-    font-family: sans-serif;
+    font-family: serif;
     margin-right: 8px;
 }
