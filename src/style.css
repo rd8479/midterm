@@ -1,0 +1,4 @@
+@import url(./output.css);
+.transition{
+    transition-duration: 3s;
+}
