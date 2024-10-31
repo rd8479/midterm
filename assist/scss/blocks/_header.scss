@@ -1,0 +1,190 @@
+body{
+    background-color:black;
+    overflow-x: hidden;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+input{
+    border: none;
+    line-height: 1.5rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.countainer{
+    max-width:520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo{
+        width: 274px;
+        margin: 20px 0;
+        &__image{
+            width:100%;
+        }
+    }
+    &__BgBackHead{
+        position: relative;
+        z-index: -1;
+        &__left,&__right{
+            position: absolute;
+            top: -66px;
+            left: -263px;
+            width: 520px;
+            height: 691px;
+            background-image: url(./assist/image/back_one_head.png);
+        }
+        &__right{
+            top: -320px;
+            right: -263px;
+            height: 607px;
+            background-image: url(./assist/image/back_two_head.webp);
+        }
+    }
+    &__divDark{
+        &__dark{
+            display: flex;
+            justify-content: space-between;
+            width: 90px;
+            height: 34px;
+            background-color:#252525;
+            border-radius:30px ;
+            &__moon{
+                background-color: transparent;
+                border:none;
+                width: 20px;
+            }
+            &__btn{
+                background-color:#fff ;
+                border:none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__signIn{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        &__signin{
+            display: inline-block;
+            border-radius: 19px;
+            background: #252525;
+            width: 116px;
+            height: 38px;
+            line-height: 38px;
+            margin-left: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 120%;
+            margin-top: 25px;
+            color: #fff;
+            &__addPerson{
+                vertical-align: middle;
+                margin: 2px;
+            }
+        }
+        &__enter{
+            display: inline-block;
+            border-radius: 19px;
+            background: #252525;
+            width: 116px;
+            height: 38px;
+            line-height: 38px;
+            margin-left: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 120%;
+            margin-top: 25px;
+            color: #fff;
+            &__icon{
+                vertical-align: middle;
+                margin: 2px;
+            }
+        }
+    }
+    &__search{
+        width: 95%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0 16px 20px;
+        margin: 12px auto 0 auto;
+        background-color: rgba(34, 34, 34, .9);
+        &__bar{
+            background-color: black;
+            padding: 12.8px 0;
+            border: none;
+            border-radius: 30px;
+            flex-grow: 1;
+            align-self: center;
+            margin-bottom: 12px;
+        }
+        &__bar::placeholder{
+            font-size: 1.25rem;
+            padding-right: 10px;
+        }
+        &__icon{
+            transform: translate(150%,-20%);
+        }
+        &__image{
+            flex-grow: .6;
+            margin-right: 10px;
+        }
+        &__bar{
+            display: none;
+            &__div{
+                &__logoSite{
+                    margin: 10px 120px;
+                }
+                &__logoExit{
+                    display: inline-block;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #eb8307;
+                    &__cross{
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+                }
+            }
+            &__items{
+                color: aliceblue;
+                font-size: large;
+                line-height: 2.65rem;
+                border-bottom: 1px solid rgb(43, 41, 41);
+                padding-right: 16px;
+            }
+        }
+        &__image:focus ~ &__bar{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 90vw;
+            height: 100vh;
+            max-width: 468px;
+            position: fixed;
+            top:0;
+            right: 0;
+            z-index: 2;
+            background-color: black;   
+        }
+    }
+}
