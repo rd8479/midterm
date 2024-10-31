@@ -449,4 +449,23 @@ footer{
     .shape{
         width: auto;
     }
+    .bg_download{
+        bottom: -2%;
+    }
+    .sq_download{
+        bottom: -1%;
+    }
+    .download img{
+        bottom: -1%;
+    }
+    footer{
+        max-width: 1580px;
+        margin:45px 0 0 0;
+    }
+    .footer{
+        width: 100%;
+    }
+    .p-{
+        font-size: x-large;
+    }
 }
