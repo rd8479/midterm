@@ -188,3 +188,37 @@ input{
         }
     }
 }
+.footer{
+    max-width:520px;
+    width: 100vw;
+    margin: 52px auto 0 auto;
+    &__box{
+        width: 90%;
+        margin: 0 auto;
+        background-color: #252525;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        &__telegramInstagram{
+            width: 85%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 50px auto 0 auto;
+            padding: 10px 0;
+            background-color:#212121;
+            border-radius: 12px;
+        }
+    }
+}
+.p-{
+    font-weight: 300;
+    font-size: medium;
+}
+.p{
+    display: inline-block;
+    font-size: large;
+    color: #fcfcfc;
+    font-family: sans-serif;
+    margin-right: 8px;
+}
