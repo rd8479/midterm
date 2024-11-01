@@ -51,7 +51,7 @@ input{
             left: -263px;
             width: 520px;
             height: 691px;
-            background-image: url(../../image/back_one_head.png);
+            background-image: url(../image/back_one_head.png);
             @media screen and (min-width:520px) {
                 width: 1580px;
                 position: absolute;
@@ -67,7 +67,7 @@ input{
             top: -320px;
             right: -263px;
             height: 607px;
-            background-image: url(../../image/back_two_head.webp);
+            background-image: url(../image/back_two_head.webp);
             @media screen and (min-width:520px) {
                 top: 0;
                 right: 0;
@@ -113,6 +113,9 @@ input{
         justify-content: center;
         gap: 20px;
         @media screen and (min-width:520px) {
+            width: 100%;
+        }
+        @media screen and (min-width:805px) {
             width: auto;
         }
         &__signin{
@@ -173,6 +176,7 @@ input{
             position: relative;
             flex-grow:1;
             align-self: center;
+            margin-right:12px ;
             &__bar1{
                 width: 100%;
                 background-color: #050505;
@@ -204,6 +208,10 @@ input{
             @media screen and (min-width:520px) {
                 display: flex !important;
             }
+            @media screen and (max-width:643px) {
+                width: 100%;
+                justify-content: space-around;
+            }
             &__div{
                 &__logoSite{
                     margin: 10px 120px;
@@ -231,11 +239,21 @@ input{
                 }
             }
             &__items{
-                display: flex;
-                flex-grow: 2;
-                &__div{
+                border-bottom: 1px solid rgb(43, 41, 41);
+                padding-right: 16px;
+                @media screen and (min-width:520px) {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row-reverse; 
+                    margin-left:32px; 
+                }
+                @media screen and (max-width:960px) {
+                    margin-left: 0;
+                }
+                &__div{
+                    @media screen and (min-width:520px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
                     &__p{
                         flex-grow: 1.5;
                         color: aliceblue;
@@ -243,8 +261,6 @@ input{
                         line-height: 2.65rem;
                     }
                 }
-                border-bottom: 1px solid rgb(43, 41, 41);
-                padding-right: 16px;
                 @media screen and (min-width:520px) {
                     border-bottom: none;
                 }
@@ -253,7 +269,6 @@ input{
         &__image:focus ~ &__bar{
             display: flex;
             flex-direction: column;
-            position: relative;
             width: 90vw;
             height: 100vh;
             max-width: 468px;
@@ -266,8 +281,12 @@ input{
     }
 }
 .p2{
-    text-transform:uppercase ;
-    color: #eb8307;
-    font-size: small;
+    display: none;
+    @media screen and (min-width:520px) {
+        display: inline-block;
+        text-transform:uppercase ;
+        color: #eb8307;
+        font-size: small;
+    }
 }
 

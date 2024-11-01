@@ -75,7 +75,7 @@ input {
   left: -263px;
   width: 520px;
   height: 691px;
-  background-image: url(../../image/back_one_head.png);
+  background-image: url(../image/back_one_head.png);
 }
 @media screen and (min-width: 520px) {
   .header__BgBackHead__left, .header__BgBackHead__right {
@@ -93,7 +93,7 @@ input {
   top: -320px;
   right: -263px;
   height: 607px;
-  background-image: url(../../image/back_two_head.webp);
+  background-image: url(../image/back_two_head.webp);
 }
 @media screen and (min-width: 520px) {
   .header__BgBackHead__right {
@@ -143,6 +143,11 @@ input {
   gap: 20px;
 }
 @media screen and (min-width: 520px) {
+  .header__signIn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 805px) {
   .header__signIn {
     width: auto;
   }
@@ -209,6 +214,7 @@ input {
   position: relative;
   flex-grow: 1;
   align-self: center;
+  margin-right: 12px;
 }
 .header__search__div__bar1 {
   width: 100%;
@@ -245,6 +251,12 @@ input {
     display: flex !important;
   }
 }
+@media screen and (max-width: 643px) {
+  .header__search__bar {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 .header__search__bar__div__logoSite {
   margin: 10px 120px;
 }
@@ -274,14 +286,26 @@ input {
   left: 10px;
 }
 .header__search__bar__items {
-  display: flex;
-  flex-grow: 2;
   border-bottom: 1px solid rgb(43, 41, 41);
   padding-right: 16px;
 }
-.header__search__bar__items__div {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 520px) {
+  .header__search__bar__items {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 32px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__search__bar__items {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 520px) {
+  .header__search__bar__items__div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .header__search__bar__items__div__p {
   flex-grow: 1.5;
@@ -297,7 +321,6 @@ input {
 .header__search__image:focus ~ .header__search__bar {
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 90vw;
   height: 100vh;
   max-width: 468px;
@@ -309,9 +332,15 @@ input {
 }
 
 .p2 {
-  text-transform: uppercase;
-  color: #eb8307;
-  font-size: small;
+  display: none;
+}
+@media screen and (min-width: 520px) {
+  .p2 {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #eb8307;
+    font-size: small;
+  }
 }
 
 .main {
