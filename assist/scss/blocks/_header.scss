@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-color:#050505;
     overflow-x: hidden;
 }
 a{
@@ -164,34 +164,52 @@ input{
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 40px;
         padding: 16px 0 16px 20px;
         margin: 12px auto 0 auto;
-        background-color: rgba(34, 34, 34, .9);
-        &__bar{
-            background-color: black;
-            padding: 12.8px 0;
-            border: none;
-            border-radius: 30px;
-            flex-grow: 1;
+        background-color: rgb(34 34 34 / 90%);
+        &__div{
+            position: relative;
+            flex-grow:1;
             align-self: center;
-            margin-bottom: 12px;
-        }
-        &__bar::placeholder{
-            font-size: 1.25rem;
-            padding-right: 10px;
-        }
-        &__icon{
-            transform: translate(150%,-20%);
+            &__bar1{
+                width: 100%;
+                background-color: #050505;
+                color: #fff;
+                padding: 12.8px 0;
+                border: none;
+                border-radius: 30px;
+                margin-bottom: 12px;
+                &__icon{
+                    position: absolute;
+                    top: 20%;
+                    left:5%;
+                }
+            }
+            &__bar1::placeholder{
+                font-size: 1.25rem;
+                padding-right: 10px;
+            }
         }
         &__image{
             flex-grow: .6;
             margin-right: 10px;
+            @media screen and (min-width:520px) {
+                display: none !important;
+            }
         }
         &__bar{
             display: none;
+            @media screen and (min-width:520px) {
+                display: flex !important;
+            }
             &__div{
                 &__logoSite{
                     margin: 10px 120px;
+                    @media screen and (min-width:520px) {
+                        display: none !important;
+                    }
                 }
                 &__logoExit{
                     display: inline-block;
@@ -202,6 +220,9 @@ input{
                     width: 35px;
                     height: 35px;
                     background-color: #eb8307;
+                    @media screen and (min-width:520px) {
+                        display: none !important;
+                    }
                     &__cross{
                         position: absolute;
                         top: 10px;
@@ -210,11 +231,23 @@ input{
                 }
             }
             &__items{
-                color: aliceblue;
-                font-size: large;
-                line-height: 2.65rem;
+                display: flex;
+                flex-grow: 2;
+                &__div{
+                    display: flex;
+                    flex-direction: column;
+                    &__p{
+                        flex-grow: 1.5;
+                        color: aliceblue;
+                        font-size: small;
+                        line-height: 2.65rem;
+                    }
+                }
                 border-bottom: 1px solid rgb(43, 41, 41);
                 padding-right: 16px;
+                @media screen and (min-width:520px) {
+                    border-bottom: none;
+                }
             }
         }
         &__image:focus ~ &__bar{
@@ -232,82 +265,9 @@ input{
         }
     }
 }
-.footer{
-    max-width:520px;
-    width: 100vw;
-    margin: 52px auto 0 auto;
-    @media screen and (min-width:520px) {
-        max-width: 1580px;
-        margin:45px 0 0 0;
-    }
-    &__box{
-        width: 90%;
-        margin: 0 auto;
-        background-color: #252525;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        @media screen and (min-width:520px) {
-            width: 100%;
-        }
-        &__telegramInstagram{
-            width: 85%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 50px auto 0 auto;
-            padding: 10px 0;
-            background-color:#212121;
-            border-radius: 12px;
-        }
-    }
+.p2{
+    text-transform:uppercase ;
+    color: #eb8307;
+    font-size: small;
 }
-.main{
-    background-color: #252525;
-    &__title{
-        display: flex;
-        gap: 4px;
-        margin: 12px 0;
-        &__p{
-            font-size: 1.15rem;
-            font-weight: 300;
-            font-family: serif;
-            color: #fcfcfc;
-        }
-    }
-    &__title2{
-        margin-top: 12px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
-        align-items: center;
-        &__h2{
-            font-size: 1.25rem;
-            font-weight: 600;
-            font-family: serif;
-            color: #fcfcfc;
-            border-bottom: #eb8307 solid 4px;
-            padding: 12px ;
-        }
-        &__h3{
-            font-size: 1.15rem;
-            font-weight: 300;
-            font-family: serif;
-            color:#df5900;
-        }
-    }
-}
-.p-{
-    font-weight: 300;
-    font-size: medium;
-    @media screen and (min-width:520px) {
-        font-size: x-large;
-    }
-}
-.p{
-    display: inline-block;
-    font-size: large;
-    color: #fcfcfc;
-    font-family: serif;
-    margin-right: 8px;
-}
+

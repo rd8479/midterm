@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-color: black;
+  background-color: #050505;
   overflow-x: hidden;
 }
 
@@ -199,35 +199,59 @@ input {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 40px;
   padding: 16px 0 16px 20px;
   margin: 12px auto 0 auto;
   background-color: rgba(34, 34, 34, 0.9);
 }
-.header__search__bar {
-  background-color: black;
+.header__search__div {
+  position: relative;
+  flex-grow: 1;
+  align-self: center;
+}
+.header__search__div__bar1 {
+  width: 100%;
+  background-color: #050505;
+  color: #fff;
   padding: 12.8px 0;
   border: none;
   border-radius: 30px;
-  flex-grow: 1;
-  align-self: center;
   margin-bottom: 12px;
 }
-.header__search__bar::placeholder {
+.header__search__div__bar1__icon {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.header__search__div__bar1::placeholder {
   font-size: 1.25rem;
   padding-right: 10px;
-}
-.header__search__icon {
-  transform: translate(150%, -20%);
 }
 .header__search__image {
   flex-grow: 0.6;
   margin-right: 10px;
 }
+@media screen and (min-width: 520px) {
+  .header__search__image {
+    display: none !important;
+  }
+}
 .header__search__bar {
   display: none;
 }
+@media screen and (min-width: 520px) {
+  .header__search__bar {
+    display: flex !important;
+  }
+}
 .header__search__bar__div__logoSite {
   margin: 10px 120px;
+}
+@media screen and (min-width: 520px) {
+  .header__search__bar__div__logoSite {
+    display: none !important;
+  }
 }
 .header__search__bar__div__logoExit {
   display: inline-block;
@@ -239,17 +263,36 @@ input {
   height: 35px;
   background-color: #eb8307;
 }
+@media screen and (min-width: 520px) {
+  .header__search__bar__div__logoExit {
+    display: none !important;
+  }
+}
 .header__search__bar__div__logoExit__cross {
   position: absolute;
   top: 10px;
   left: 10px;
 }
 .header__search__bar__items {
-  color: aliceblue;
-  font-size: large;
-  line-height: 2.65rem;
+  display: flex;
+  flex-grow: 2;
   border-bottom: 1px solid rgb(43, 41, 41);
   padding-right: 16px;
+}
+.header__search__bar__items__div {
+  display: flex;
+  flex-direction: column;
+}
+.header__search__bar__items__div__p {
+  flex-grow: 1.5;
+  color: aliceblue;
+  font-size: small;
+  line-height: 2.65rem;
+}
+@media screen and (min-width: 520px) {
+  .header__search__bar__items {
+    border-bottom: none;
+  }
 }
 .header__search__image:focus ~ .header__search__bar {
   display: flex;
@@ -265,43 +308,16 @@ input {
   background-color: black;
 }
 
-.footer {
-  max-width: 520px;
-  width: 100vw;
-  margin: 52px auto 0 auto;
-}
-@media screen and (min-width: 520px) {
-  .footer {
-    max-width: 1580px;
-    margin: 45px 0 0 0;
-  }
-}
-.footer__box {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #252525;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 520px) {
-  .footer__box {
-    width: 100%;
-  }
-}
-.footer__box__telegramInstagram {
-  width: 85%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px auto 0 auto;
-  padding: 10px 0;
-  background-color: #212121;
-  border-radius: 12px;
+.p2 {
+  text-transform: uppercase;
+  color: #eb8307;
+  font-size: small;
 }
 
 .main {
-  background-color: #252525;
+  background-color: #000;
+  width: 95%;
+  margin: 0 auto;
 }
 .main__title {
   display: flex;
@@ -352,4 +368,40 @@ input {
   color: #fcfcfc;
   font-family: serif;
   margin-right: 8px;
+}
+
+.footer {
+  max-width: 520px;
+  width: 100vw;
+  margin: 52px auto 0 auto;
+}
+@media screen and (min-width: 520px) {
+  .footer {
+    max-width: 1580px;
+    width: 95%;
+    margin: 45px auto 0 auto;
+  }
+}
+.footer__box {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 520px) {
+  .footer__box {
+    width: 100%;
+  }
+}
+.footer__box__telegramInstagram {
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px auto 0 auto;
+  padding: 10px 0;
+  background-color: #151515;
+  border-radius: 12px;
 }
