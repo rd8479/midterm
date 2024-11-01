@@ -19,11 +19,22 @@ input{
     max-width:520px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width:520px) {
+        margin: 0;
+        max-width: 1580px;
+    }
 }
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width:520px) {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 50px;
+        margin: 15px 20px;
+    }
     &__logo{
         width: 274px;
         margin: 20px 0;
@@ -41,15 +52,36 @@ input{
             width: 520px;
             height: 691px;
             background-image: url(../../image/back_one_head.png);
+            @media screen and (min-width:520px) {
+                width: 1580px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 520px;
+                height: 607px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
         &__right{
             top: -320px;
             right: -263px;
             height: 607px;
             background-image: url(../../image/back_two_head.webp);
+            @media screen and (min-width:520px) {
+                top: 0;
+                right: 0;
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
         }
     }
     &__divDark{
+        @media screen and (min-width:520px) {
+            display: flex;
+            justify-content: end;
+            flex-grow: 2;
+        }
         &__dark{
             display: flex;
             justify-content: space-between;
@@ -57,6 +89,9 @@ input{
             height: 34px;
             background-color:#252525;
             border-radius:30px ;
+            @media screen and (min-width:520px) {
+                display: inline-flex;
+            }
             &__moon{
                 background-color: transparent;
                 border:none;
@@ -77,6 +112,9 @@ input{
         display: flex;
         justify-content: center;
         gap: 20px;
+        @media screen and (min-width:520px) {
+            width: auto;
+        }
         &__signin{
             display: inline-block;
             border-radius: 19px;
@@ -90,6 +128,9 @@ input{
             font-size: 120%;
             margin-top: 25px;
             color: #fff;
+            @media screen and (min-width:520px) {
+                margin: 0;
+            }
             &__addPerson{
                 vertical-align: middle;
                 margin: 2px;
@@ -108,6 +149,9 @@ input{
             font-size: 120%;
             margin-top: 25px;
             color: #fff;
+            @media screen and (min-width:520px) {
+                margin: 0;
+            }
             &__icon{
                 vertical-align: middle;
                 margin: 2px;
@@ -192,6 +236,10 @@ input{
     max-width:520px;
     width: 100vw;
     margin: 52px auto 0 auto;
+    @media screen and (min-width:520px) {
+        max-width: 1580px;
+        margin:45px 0 0 0;
+    }
     &__box{
         width: 90%;
         margin: 0 auto;
@@ -199,6 +247,9 @@ input{
         border-radius: 15px;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width:520px) {
+            width: 100%;
+        }
         &__telegramInstagram{
             width: 85%;
             display: flex;
@@ -249,6 +300,9 @@ input{
 .p-{
     font-weight: 300;
     font-size: medium;
+    @media screen and (min-width:520px) {
+        font-size: x-large;
+    }
 }
 .p{
     display: inline-block;

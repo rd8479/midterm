@@ -37,11 +37,26 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 520px) {
+  .countainer {
+    margin: 0;
+    max-width: 1580px;
+  }
+}
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 520px) {
+  .header {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin: 15px 20px;
+  }
 }
 .header__logo {
   width: 274px;
@@ -60,13 +75,40 @@ input {
   left: -263px;
   width: 520px;
   height: 691px;
-  background-image: url(../image/back_one_head.png);
+  background-image: url(../../image/back_one_head.png);
+}
+@media screen and (min-width: 520px) {
+  .header__BgBackHead__left, .header__BgBackHead__right {
+    width: 1580px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: 607px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .header__BgBackHead__right {
   top: -320px;
   right: -263px;
   height: 607px;
-  background-image: url(../image/back_two_head.webp);
+  background-image: url(../../image/back_two_head.webp);
+}
+@media screen and (min-width: 520px) {
+  .header__BgBackHead__right {
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 520px) {
+  .header__divDark {
+    display: flex;
+    justify-content: end;
+    flex-grow: 2;
+  }
 }
 .header__divDark__dark {
   display: flex;
@@ -75,6 +117,11 @@ input {
   height: 34px;
   background-color: #252525;
   border-radius: 30px;
+}
+@media screen and (min-width: 520px) {
+  .header__divDark__dark {
+    display: inline-flex;
+  }
 }
 .header__divDark__dark__moon {
   background-color: transparent;
@@ -95,6 +142,11 @@ input {
   justify-content: center;
   gap: 20px;
 }
+@media screen and (min-width: 520px) {
+  .header__signIn {
+    width: auto;
+  }
+}
 .header__signIn__signin {
   display: inline-block;
   border-radius: 19px;
@@ -108,6 +160,11 @@ input {
   font-size: 120%;
   margin-top: 25px;
   color: #fff;
+}
+@media screen and (min-width: 520px) {
+  .header__signIn__signin {
+    margin: 0;
+  }
 }
 .header__signIn__signin__addPerson {
   vertical-align: middle;
@@ -126,6 +183,11 @@ input {
   font-size: 120%;
   margin-top: 25px;
   color: #fff;
+}
+@media screen and (min-width: 520px) {
+  .header__signIn__enter {
+    margin: 0;
+  }
 }
 .header__signIn__enter__icon {
   vertical-align: middle;
@@ -208,6 +270,12 @@ input {
   width: 100vw;
   margin: 52px auto 0 auto;
 }
+@media screen and (min-width: 520px) {
+  .footer {
+    max-width: 1580px;
+    margin: 45px 0 0 0;
+  }
+}
 .footer__box {
   width: 90%;
   margin: 0 auto;
@@ -215,6 +283,11 @@ input {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 520px) {
+  .footer__box {
+    width: 100%;
+  }
 }
 .footer__box__telegramInstagram {
   width: 85%;
@@ -266,6 +339,11 @@ input {
 .p- {
   font-weight: 300;
   font-size: medium;
+}
+@media screen and (min-width: 520px) {
+  .p- {
+    font-size: x-large;
+  }
 }
 
 .p {
