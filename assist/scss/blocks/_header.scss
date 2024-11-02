@@ -5,6 +5,7 @@ body{
 a{
     color:black;
     text-decoration: none;
+    cursor: pointer;
 }
 input{
     border: none;
@@ -20,7 +21,7 @@ input{
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width:520px) {
-        margin: 0;
+        margin: 0 auto;
         max-width: 1580px;
     }
 }
@@ -204,6 +205,37 @@ input{
             }
         }
         &__bar{
+            &__div{
+                display: flex;
+                justify-content: space-between;
+                &__items{
+                    border-bottom: 1px solid rgb(43, 41, 41);
+                    padding-right: 16px;
+                    @media screen and (min-width:520px) {
+                        display: flex;
+                        flex-direction: row-reverse; 
+                        margin-left:32px; 
+                    }
+                    @media screen and (max-width:960px) {
+                        margin-left: 0;
+                    }
+                    &__div{
+                        @media screen and (min-width:520px) {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        &__p{
+                            flex-grow: 1.5;
+                            color: aliceblue;
+                            font-size: small;
+                            line-height: 2.65rem;
+                        }
+                    }
+                    @media screen and (min-width:520px) {
+                        border-bottom: none;
+                    }
+                }
+            }
             display: none;
             @media screen and (min-width:520px) {
                 display: flex !important;
@@ -236,33 +268,6 @@ input{
                         top: 10px;
                         left: 10px;
                     }
-                }
-            }
-            &__items{
-                border-bottom: 1px solid rgb(43, 41, 41);
-                padding-right: 16px;
-                @media screen and (min-width:520px) {
-                    display: flex;
-                    flex-direction: row-reverse; 
-                    margin-left:32px; 
-                }
-                @media screen and (max-width:960px) {
-                    margin-left: 0;
-                }
-                &__div{
-                    @media screen and (min-width:520px) {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    &__p{
-                        flex-grow: 1.5;
-                        color: aliceblue;
-                        font-size: small;
-                        line-height: 2.65rem;
-                    }
-                }
-                @media screen and (min-width:520px) {
-                    border-bottom: none;
                 }
             }
         }
