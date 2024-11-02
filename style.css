@@ -101,9 +101,11 @@ input{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
     padding: 16px 0 16px 20px;
     margin: 12px auto 0 auto;
-    background-color: rgba(34, 34, 34, .9);
+    background-color: rgb(34 34 34 / 90%);
 }
 .search_bar{
     background-color: black;
@@ -127,6 +129,10 @@ input{
 }
 .bar{
     display: none;
+}
+.bar_div{
+    display: flex;
+    justify-content: space-between;
 }
 .hamberger_bar:focus ~ .bar{
     display: flex;
@@ -158,12 +164,24 @@ input{
 }.logo_site{
     margin: 10px 120px;
 }
-.items{
+.items__div{
     color: aliceblue;
     font-size: large;
     line-height: 2.65rem;
     border-bottom: 1px solid rgb(43, 41, 41);
     padding-right: 16px;
+}
+.items__div__p{
+    flex-grow: 1.5;
+    color: aliceblue;
+    font-size: small;
+    line-height: 2.65rem;
+}
+.bar__div img{
+    display: none;
+}
+.p2{
+    display: none;
 }
 .main{
     display: flex;
@@ -389,7 +407,7 @@ footer{
     background-color:#212121;
     border-radius: 12px;
 }
-@media screen and (min-width:520px) {
+@media screen and (min-width:520px){
     .countainer{
         margin: 0;
         max-width: 1580px;
@@ -468,4 +486,52 @@ footer{
     .p-{
         font-size: x-large;
     }
+    .items{
+        display: flex;
+        flex-direction: row-reverse; 
+    }
+    .items__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .items__div__p{
+        border-bottom: none;
+    }
+    .bar__div{
+        display: flex !important;
+    }
+    .logo_exit{
+        display: none;
+    }
+    .logo_site{
+        display: none;
+    }
+    .box_menu{
+        display: none;
+    }
+    .hamberger_bar{
+        display: none;
+    }
+    .p2{
+        display: inline-block;
+        text-transform:uppercase ;
+        color: #eb8307;
+        font-size: small;
+    }
+    .bar{
+        display: flex;
+    }
+    .bar__div img{
+        display: inline-block;
+    }
+    .items__div{
+        border-bottom:none ;
+    }
 }
+@media screen and (max-width:643px) {
+    .bar__div{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+                
