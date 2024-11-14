@@ -5,83 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assist/scss/main.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
     <div class="countainer">
         <header class="header">
-            <div class="header__logo">
-                <img src="./assist/image/logo-dark.png" alt="logo_of_site" class="header__logo__image">
+            <div class="header_logo">
+                <img src="./assist/image/logo-light.png" alt="logo_of_site" class="image_logo">
             </div>
-            <div class="header__divDark">
-                <div class="header__divDark__dark">
-                    <button class="header__divDark__dark__moon"><img src="./assist/svg/moon.svg" class="fa-6x"></button>
-                    <button class="header__divDark__dark__btn"></button>
+            <div class="div_dark">
+                <div class="dark_light">
+                    <button class="moon"><img src="./assist/svg/moon.svg" class="fa-6x"></button>
+                    <button class="btn"></button>
                 </div>
             </div>
-            <div class="header__BgBackHead">
-                <div class="header__BgBackHead__left"></div>
-                <div class="header__BgBackHead__right"></div>
-            </div>
-            <div class="header__signIn">
-                <a href="#" class="header__signIn__signin"><img src="./assist/svg/add_person.svg" alt="add_person_icon"
-                        class="header__signIn__signin__addPerson">ثبت نام</a>
-                <a href="#" class="header__signIn__enter"><img src="./assist/svg/first_svg.svg" alt="enter_icon"
-                        class="header__signIn__enter__icon">وارد
+            <div class="sign_in">
+                <a href="./sign in.html" class="signin"><img src="./assist/svg/add_person.svg" alt="add_person_icon"
+                        class="add_person">ثبت نام</a>
+                <a href="#" class="enter"><img src="./assist/svg/first_svg.svg" alt="enter_icon" class="enter_icon">وارد
                     شوید</a>
             </div>
-            <div class="header__search">
-                <div class="header__search__div">
-                    <input id="search_bar" class="header__search__div__bar1" placeholder="جستجو کنید ...">
-                    <img src="./assist/svg/search.svg" alt=" search_icon" class="header__search__div__bar1__icon">
-                </div>
-                <a href="#" class="header__search__image"><img src="./assist/svg/menu.svg" alt="icon_menu"></a>
-                <div class="header__search__bar">
-                    <div class="header__search__bar__div">
-                        <img src="./assist/image/logo.webp" alt="logo of site"
-                            class="header__search__bar__div__logoSite">
-                        <div class="header__search__bar__div__logoExit">
-                            <img src="./assist/svg/cross.svg" alt="cross"
-                                class="header__search__bar__div__logoExit__cross">
+            <div class="search">
+                <div class="search__countainer">
+                    <div class="rowflex">
+                        <div class="flex_righ">
+                            <div class="hamberger">
+                                <img src="./assist/svg/menu.svg" alt="">
+                                <div class="barr" style="display: none;">
+                                    <img src="./assist/image/logo.webp" alt="" style="background-color: transparent; width: 200px;">
+                                    <div class="round">
+                                        <img src="./assist/svg/cross.svg" alt="">
+                                    </div>
+                                    <div class="items">خانه</div>
+                                    <div class="items">دانلود فیلم</div>
+                                    <div class="items">دانلود سریال</div>
+                                    <div class="items">هنرمندان</div>
+                                    <div class="items">تماس با ما</div>
+                                </div>
+                            </div>
+                            <ul class="right_menu">
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/home.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>خانه</span>
+                                            <span>home</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/film.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>دانلود فیلم</span>
+                                            <span>movies</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/tv2.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>دانلود سریال</span>
+                                            <span>series</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/mask2.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>هنرمندان</span>
+                                            <span>artist</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/contact.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>تماس با ما</span>
+                                            <span>contact</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="header__search__bar__div">
-                        <a href="" class="header__search__bar__div__items">
-                            <div class="header__search__bar__div__items__div">
-                                <p class="header__search__bar__div__items__div__p">خانه</p>
-                                <p class="header__search__bar__div__items__div__p  p2">home</p>
-                            </div>
-                            <img src="./assist/svg/home.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="header__search__bar__div__items">
-                            <div class="header__search__bar__div__items__div">
-                                <p class="header__search__bar__div__items__div__p">دانلود فیلم</p>
-                                <p class="header__search__bar__div__items__div__p p2">movies</p>
-                            </div>
-                            <img src="./assist/svg/film.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="header__search__bar__div__items">
-                            <div class="header__search__bar__div__items__div">
-                                <p class="header__search__bar__div__items__div__p">دانلود سریال</p>
-                                <p class="header__search__bar__div__items__div__p p2">series</p>
-                            </div>
-                            <img src="./assist/svg/tv2.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="header__search__bar__div__items">
-                            <div class="header__search__bar__div__items__div">
-                                <p class="header__search__bar__div__items__div__p">هنرمندان</p>
-                                <p class="header__search__bar__div__items__div__p p2">artists</p>
-                            </div>
-                            <img src="./assist/svg/mask2.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="header__search__bar__div__items">
-                            <div class="header__search__bar__div__items__div">
-                                <p class="header__search__bar__div__items__div__p">تماس با ما</p>
-                                <p class="header__search__bar__div__items__div__p p2">contact</p>
-                            </div>
-                            <img src="./assist/svg/contact.svg" alt="" width="28px">
-                        </a>
+                        <div class="flex_left">
+                            <form>
+                                <input type="text" class="search_bar" placeholder="جستجو...">
+                                <div class="place_icon"><img src="./assist/svg/search.svg" alt="" width="16px"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -335,48 +351,51 @@
                     سپاسگزاریم.</p>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer__box">
-                <div class="footer__box__telegramInstagram">
-                    <div>
-                        <img src="./assist/svg/telegram.svg" alt="">
+        <footer>
+            <div class="footer">
+                <div class="int1_5">
+                    <div class="int">
+                        <div class="telegram_instagram">
+                            <div>
+                                <img src="./assist/svg/telegram.svg" alt="">
+                            </div>
+                            <div style="font-size: 3rem; color: #2f2f2f;">/</div>
+                            <div style="display: flex; flex-direction: column;">
+                                <p class="p">عضویت در کانال تلگرام</p>
+                                <p class="p" style="color: #eb8307;">TELEGRAM CHANNEL</p>
+                            </div>
+                        </div>
+                        <div class="telegram_instagram">
+                            <div>
+                                <img src="./assist/svg/instagram.svg" alt="">
+                            </div>
+                            <div style="font-size: 3rem; color: #2f2f2f;">/</div>
+                            <div style="display: flex; flex-direction: column;">
+                                <p class="p">مشاهده در اینستاگرام</p>
+                                <p class="p" style="color: #eb8307;">INSTAGRAME PAGE</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="font-size: 3rem; color: #2f2f2f;">/</div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">عضویت در کانال تلگرام</p>
-                        <p class="p" style="color: #eb8307;">TELEGRAM CHANNEL</p>
-                    </div>
-                </div>
-                <div class="footer__box__telegramInstagram">
-                    <div>
-                        <img src="./assist/svg/instagram.svg" alt="">
-                    </div>
-                    <div style="font-size: 3rem; color: #2f2f2f;">/</div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">مشاهده در اینستاگرام</p>
-                        <p class="p" style="color: #eb8307;">INSTAGRAME PAGE</p>
-                    </div>
-                </div>
-                <div style="display: flex; justify-content: space-around; margin: 12px 0;">
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">دانلود فیلم</p>
-                        <p class="p p-">پخش آنلاین فیلم ها</p>
-                        <p class="p p-">250 فیلم برتر تاریخ</p>
-                        <p class="p p-">باکس آفیس </p>
-                        <p class="p p-">قوانین و مقررات</p>
-                    </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">دانلود سریال</p>
-                        <p class="p p-">پخش آنلاین سریال ها</p>
-                        <p class="p p-">250 سریال برتر تاریخ</p>
-                        <p class="p p-">سوالات متداول</p>
-                        <p class="p p-">DMCA POLICY</p>
+                    <div style="display: flex; justify-content: space-around; margin: 12px 0;" class="int2">
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="" class="p ">دانلود فیلم</a>
+                            <a href="" class="p ">پخش آنلاین فیلم ها</a>
+                            <a href="" class="p ">250 فیلم برتر تاریخ</a>
+                            <a href="" class="p ">باکس آفیس </a>
+                            <a href="./rol.html" class="p ">قوانین و مقررات</a>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="" class="p ">دانلود سریال</a>
+                            <a href="" class="p ">پخش آنلاین سریال ها</a>
+                            <a href="" class="p ">250 سریال برتر تاریخ</a>
+                            <a href="" class="p ">سوالات متداول</a>
+                            <a href="" class="p ">DMCA POLICY</a>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <p class="p p-">تمامی حقوق مادی و معنوی این وبسایت محفوظ می باشدوکپی برداری به هر نحوه پیگرد قانونی
-                        خواهد داشت
-                    </p>
+                    <p class="p">تمامی حقوق مادی و معنوی این وبسایت محفوظ می باشدوکپی برداری به هر نحوه پیگرد قانونی
+                        خواهد داشت</p>
                 </div>
             </div>
         </footer>

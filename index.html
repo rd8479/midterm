@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>دیجی موویز-تماشای فیلم وسریال</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./assist/image/digi-fav.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="countainer">
         <header class="header">
             <div class="header_logo">
-                <img src="./assist/image/logo-dark.png" alt="logo_of_site" class="image_logo">
+                <img src="./assist/image/logo-light.png" alt="logo_of_site" class="image_logo">
             </div>
             <div class="div_dark">
                 <div class="dark_light">
@@ -20,62 +21,84 @@
                     <button class="btn"></button>
                 </div>
             </div>
-            <div class="bg_back_head">
-                <div class="bg_left_back"></div>
-                <div class="bg_right_back"></div>
-            </div>
             <div class="sign_in">
-                <a href="#" class="signin"><img src="./assist/svg/add_person.svg" alt="add_person_icon"
+                <a href="./sign in.html" class="signin"><img src="./assist/svg/add_person.svg" alt="add_person_icon"
                         class="add_person">ثبت نام</a>
                 <a href="#" class="enter"><img src="./assist/svg/first_svg.svg" alt="enter_icon" class="enter_icon">وارد
                     شوید</a>
             </div>
             <div class="search">
-                <img src="./assist/svg/search.svg" alt=" search_icon" class="search_icon">
-                <label for="search_bar"></label>
-                <input id="search_bar" class="search_bar" placeholder="جستجو کنید ..."></input>
-                <a href="#" class="hamberger_bar"><img src="./assist/svg/menu.svg" alt="icon_menu"></a>
-                <div class="bar">
-                    <div class="box_menu">
-                        <img src="./assist/image/logo.webp" alt="logo of site" class="logo_site">
-                        <div class="logo_exit"><img src="./assist/svg/cross.svg" alt="cross" class="cross"></div>
-                    </div>
-                    <div class="bar__div">
-                        <a href="" class="items">
-                            <div class="items__div">
-                                <p class="items__div__p">خانه</p>
-                                <p class="p2">home</p>
+                <div class="search__countainer">
+                    <div class="rowflex">
+                        <div class="flex_righ">
+                            <div class="hamberger">
+                                <img src="./assist/svg/menu.svg" alt="">
+                                <div class="barr" style="display: none;">
+                                    <img src="./assist/image/logo.webp" alt="" style="background-color: transparent; width: 200px;">
+                                    <div class="round">
+                                        <img src="./assist/svg/cross.svg" alt="">
+                                    </div>
+                                    <div class="items">خانه</div>
+                                    <div class="items">دانلود فیلم</div>
+                                    <div class="items">دانلود سریال</div>
+                                    <div class="items">هنرمندان</div>
+                                    <div class="items">تماس با ما</div>
+                                </div>
                             </div>
-                            <img src="./assist/svg/home.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="items">
-                            <div class="items__div">
-                                <p class="items__div__p">دانلود فیلم</p>
-                                <p class="p2">movies</p>
-                            </div>
-                            <img src="./assist/svg/film.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="items">
-                            <div class="items__div">
-                                <p class="items__div__p">دانلود سریال</p>
-                                <p class="p2">series</p>
-                            </div>
-                            <img src="./assist/svg/tv2.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="items">
-                            <div class="items__div">
-                                <p class="items__div__p">هنرمندان</p>
-                                <p class="p2">artists</p>
-                            </div>
-                            <img src="./assist/svg/mask2.svg" alt="" width="28px">
-                        </a>
-                        <a href="" class="items">
-                            <div class="items__div">
-                                <p class="items__div__p">تماس با ما</p>
-                                <p class="p2">contact</p>
-                            </div>
-                            <img src="./assist/svg/contact.svg" alt="" width="28px">
-                        </a>
+                            <ul class="right_menu">
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/home.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>خانه</span>
+                                            <span>home</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/film.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>دانلود فیلم</span>
+                                            <span>movies</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/tv2.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>دانلود سریال</span>
+                                            <span>series</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/mask2.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>هنرمندان</span>
+                                            <span>artist</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link_search">
+                                        <div class="right_icon"><img src="./assist/svg/contact.svg" alt="home"></div>
+                                        <div class="left_text">
+                                            <span>تماس با ما</span>
+                                            <span>contact</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex_left">
+                            <form>
+                                <input type="text" class="search_bar" placeholder="جستجو...">
+                                <div class="place_icon"><img src="./assist/svg/search.svg" alt="" width="16px"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,228 +117,278 @@
                 <span style="--i:9;" class="rotate"><img src="./assist/image/9.jpg" alt="" class="image_rotate"></span>
             </div>
             <div class="filter">
-                <div class="p n">نوع</div>
-                <div class="shape shape2">
-                    <div class="p">فیلم</div>
-                    <div class="p">سریال</div>
+                <div class="filter_icon">
+                    <img src="./assist/image/2426501.webp" alt="" width="100px" style="background-color: #eb8307;">
+                    <span>جستجو</span>
+                    <span>حرفه ای</span>
                 </div>
-                <div>
-                    <label for="direct">
-                        <div class="p">کارگردان</div>
-                    </label>
-                    <input type="text" id="direct" placeholder="Christopher Nolan" class="shape">
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">بازیگران</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="leonardo dicaprio" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <div class="shape2">
-                        <div class="p">سال ساخت </div>
-                        <div class="p">2024-1888</div>
-                    </div>
-                    <div class="hr">
-                        <div class="sq"></div>
-                        <div class="sq"></div>
-                    </div>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">کشور</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="ایران" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">رده سنی</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="همه" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">ژانر</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="درام" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <div class="shape2">
-                        <div class="p">امتیاز</div>
-                        <div class="p">10.0-1.0</div>
-                    </div>
-                    <div class="hr">
-                        <div class="sq"></div>
-                        <div class="sq"></div>
-                    </div>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">کیفیت</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="720" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">شبکه</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="AMC" class="shape">
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <label for="direct">
-                            <div class="p">ترتیب</div>
-                        </label>
-                        <input type="text" id="direct" placeholder="جدیدترین" class="shape">
-                    </form>
-                </div>
-                <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-left: 10px;">
-                    <div style="display: flex; align-items: center;">
-                        <div class="p p-">دوبله فارسی </div>
-                        <div class="span">
-                            <div class="rad"></div>
+                <div style="padding: 30px 20px 20px; width: 100%;">
+                    <div style="display: flex; justify-content: space-between; gap:20px; width: 100%; margin-bottom: 30px;"
+                        class="wrap1 width">
+                        <div style="display: flex; gap: 12px;" class="form_filter wrap width">
+                            <div class="p width" style="text-align: center;">نوع</div>
+                            <div class="type width">
+                                <div class="p type_item width" style="text-align: center;">فیلم</div>
+                                <div class="p type_item width" style="text-align: center;">سریال</div>
+                            </div>
+                        </div>
+                        <div style=" display: flex;gap: 12px;" class="form_filter width">
+                            <form class="form_filter width wrap">
+                                <label for="direct" class="p">کارگردان</label>
+                                <input type="text" id="direct" placeholder="Christopher Nolan" class="type_input width">
+                            </form>
+                        </div>
+                        <div style=" display: flex; gap: 12px;" class="form_filter width">
+                            <form class="form_filter width wrap">
+                                <label for="direct" class="p"">بازیگران</label>
+                            <input type=" text" id="direct" placeholder="leonardo dicaprio" class="type_input width">
+                            </form>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; flex-grow: 1.5;" class="form_filter">
+                            <div class="made_in">
+                                <div class="p">سال ساخت </div>
+                                <div class="p" style="color: #eb8307;">2024-1888</div>
+                            </div>
+                            <div class="hr">
+                                <div class="sq"></div>
+                                <div class="sq"></div>
+                            </div>
                         </div>
                     </div>
-                    <div style="display: flex;align-items: center;">
-                        <div class="p p-">سانسور شده</div>
-                        <div class="span">
-                            <div class="rad"></div>
+                    <div style="display: flex; justify-content:space-between; width: 100%; margin-bottom: 30px; gap: 8px;"
+                        class="wrap1 width">
+                        <div style=" display: flex;gap: 4px;" class="form_filter width">
+                            <form class="form_filter width wrap">
+                                <label for="direct" class="p">کشور</label>
+                                <input type="text" id="direct" placeholder="ایران" class="type_input width">
+                            </form>
+                        </div>
+                        <div style=" display: flex;gap: 4px;" class="form_filter width">
+                            <form class="form_filter width wrap">
+                                <label for="direct" class="p" style="white-space: nowrap;">رده سنی</label>
+                                <input type="text" id="direct" placeholder="همه" class="type_input width">
+                            </form>
+                        </div>
+                        <div style=" display: flex;gap: 4px;" class="form_filter width">
+                            <form class="form_filter width wrap">
+                                <label for="direct" class="p">ژانر</label>
+                                <input type="text" id="direct" placeholder="درام" class="type_input width">
+                            </form>
+                        </div>
+                        <div style="display: flex; width: 23%; flex-direction: column;" class="filter_rang">
+                            <div class="made_in">
+                                <div class="p">امتیاز</div>
+                                <div class="p" style="color: #eb8307;">1.0-10.0</div>
+                            </div>
+                            <div class="hr">
+                                <div class="sq"></div>
+                                <div class="sq"></div>
+                            </div>
                         </div>
                     </div>
-                    <div style="display: flex;align-items: center;">
-                        <div class="p p-">زیرنویس فارسی</div>
-                        <div class="span">
-                            <div class="rad"></div>
+                    <div style="display: flex; gap:20px; margin-bottom: 30px;" class="wrap1 width">
+                        <div style=" display: flex;gap: 12px;" class="form_filter width">
+                            <form class="width wrap">
+                                <label for="direct" class="p">کیفیت</label>
+                                <input type="text" id="direct" placeholder="720" class="type_input width">
+                            </form>
+                        </div>
+                        <div style=" display: flex;gap: 12px;" class="form_filter width">
+                            <form class=" width wrap">
+                                <label for="direct" class="p">شبکه</label>
+                                <input type="text" id="direct" placeholder="AMC" class="type_input width">
+                            </form>
+                        </div>
+                        <div style=" display: flex;gap: 12px;" class="form_filter width">
+                            <form class=" width wrap">
+                                <label for="direct" class="p">ترتیب</label>
+                                <input type="text" id="direct" placeholder="جدیدترین" class="type_input width">
+                            </form>
                         </div>
                     </div>
-                    <div style="display: flex;align-items: center;">
-                        <div class="p p-">پخش آنلاین</div>
-                        <div class="span">
-                            <div class="rad"></div>
+                    <div style="width: 100%; display: flex;gap: 20px; margin-left: 10px; justify-content: space-between;"
+                        class="wrap1">
+                        <div style="display: flex;gap:16px" class="wrap1">
+                            <div style="display: flex; align-items: center;">
+                                <div class="p" style="margin: 0;">دوبله فارسی </div>
+                                <div class="span">
+                                    <div class="rad"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <div class="p" style="margin: 0;">سانسور شده</div>
+                                <div class="span">
+                                    <div class="rad"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <div class="p" style="margin: 0;">زیرنویس فارسی</div>
+                                <div class="span">
+                                    <div class="rad"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <div class="p" style="margin: 0;">پخش آنلاین</div>
+                                <div class="span">
+                                    <div class="rad"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: relative; margin-top: 16px;">
+                            <input id="search_bar" class="search_bar" placeholder="جستجو کنید ..."
+                                style="min-width: 210px; position: relative;"></input>
+                            <img src="./assist/svg/search.svg" alt=" search_icon" class="search_icon search_icon2">
                         </div>
                     </div>
-                </div>
-                <div style="position: relative; margin-top: 16px;">
-                    <label for="search_bar"></label>
-                    <input id="search_bar" class="search_bar" placeholder="جستجو کنید ..."></input>
-                    <img src="./assist/svg/search.svg" alt=" search_icon" class="search_icon search_icon2">
                 </div>
             </div>
-            <div class="box">
-                <img src="./assist/image/image1.jpg" alt="" class="card_image" width="200px">
-                <div class="p shape" style="text-align: center; cursor: pointer; background-color: #2d2d2d;">مشاهده
-                    تریلر</div>
-                <div class="icons">
-                    <div class="right">
-                        <img src="./assist/svg/heart.svg" alt="">
-                        <img src="./assist/svg/plus.svg" alt="">
-                    </div>
-                    <div class="left">
-                        <div
-                            style="display: flex; flex-direction: row-reverse; gap: 2px; border-bottom: 1px #000004 solid;padding-bottom: 4px;">
-                            <p class="strong">6.7</p>
-                            <p class="small" style="align-self: end;">10/</p>
+            <div class="divbox">
+                <div class="sre">
+                    <div class="insre">
+                        <div class="in_insre">
+                            <div class="titr">
+                                <img src="./assist/svg/tv2.svg" alt="">
+                                <div class="titr_in">
+                                    <span class="p" style="font-size:20px;">سریال های</span>
+                                    <span class="p">بروز شده</span>
+                                </div>
+                            </div>
+                            <div class="sre_card">
+                                <img src="./assist/image/pangun.jpeg" alt="" width="300px" class="image_sre">
+                                <div>
+                                    <span style="color: #fff; font-size: 16px;">قسمت</span>
+                                    <span
+                                        style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #eb8307; text-align: center; color: #fff;">7</span>
+                                    <span style="font-size:16px; color: #fff;">فصل اول با زیرنویس منتشر شد</span>
+                                </div>
+                            </div>
+                            <div class="sre_card">
+                                <img src="./assist/image/from.jpg" alt="" width="300px" class="image_sre">
+                                <div>
+                                    <span style="color: #fff; font-size: 16px;">قسمت</span>
+                                    <span
+                                        style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #eb8307; text-align: center; color: #fff;">7</span>
+                                    <span style="font-size:16px; color: #fff;">فصل سوم با زیرنویس منتشر شد</span>
+                                </div>
+                            </div>
                         </div>
-                        <p class="small" style="margin: 5px 0 0 0; padding: 7px 0 0 0;">6.5K Votes</p>
-                        <div class="imdb">IMDb</div>
                     </div>
                 </div>
-                <div class="p p-" style="font-size: x-large;">دانلود فیلم The Door 2009</div>
-                <div style="align-self: start; margin: 12px 16px;">
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/tv.svg" alt="" style="vertical-align:bottom;width: 20px;">
-                        <p class="p" style="font-size: small;">کیفیت : 1080p BluRay</p>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="./assist/image/image1.jpg" alt="" class="card_image" width="200px">
+                        <div class="p shape triler"
+                            style="text-align: center; cursor: pointer; background-color: #2d2d2d;width: 90%;padding: 12px;margin: 0 24px 8px 24px;border-radius: 12px;">
+                            مشاهده
+                            تریلر</div>
                     </div>
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/clock.svg" alt="" style="vertical-align:bottom;width: 20px;">
-                        <p class="p" style="font-size: small;">زمان : 103 دقیقه</p>
-                    </div>
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/folder.svg" alt="" style="vertical-align:bottom; width: 20px;">
-                        <p class="p" style="font-size: small;"> ژانر : درام , رازآلود , علمی تخیلی , هیجان انگیز</p>
-                    </div>
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/director.svg" alt="" style="vertical-align:bottom; width: 20px;">
-                        <p class="p" style="font-size: small;"> کارگردان : Anno Saul</p>
-                    </div>
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/mask.svg" alt="" style="vertical-align:bottom; width: 20px;">
-                        <p class=" p" style="font-size: small;">ستارگان : mads mikkelsen,Jessica Schwarz,Valeria
-                            Eisenbart</p>
-                    </div>
-                    <div style="margin-bottom:8px;">
-                        <img src="./assist/svg/internet.svg" alt="" style="vertical-align:bottom; width: 20px;">
-                        <p class=" p" style="font-size: small;">محصول کشور : آلمان</p>
-                    </div>
-                </div>
-                <div>
-                    <p class="p" style="font-size: small;">یک بازیگر موفق پس از مرگ ناگهانی دخترش کنترل زندگی خود را از
-                        دست می دهد. شانس دوباره ای برای شروعی جدید به او داده می شود، اما همه چیز آنطور که به نظر می رسد
-                        نیست...</p>
-                </div>
-                <div style="margin:12px 0 28px 0;">
-                    <p class="p">ادامه/</p>
-                    <a class="p" style="color: #eb8307;cursor: pointer;">دانلود</a>
-                    <div class="download">
-                        <img src="./assist/svg/download.svg" alt="">
-                        <div class="bg_download"></div>
-                        <div class="sq_download"></div>
+                    <div class="card_info">
+                        <div class="icons">
+                            <div class="right">
+                                <img src="./assist/svg/heart.svg" alt="">
+                                <img src="./assist/svg/plus.svg" alt="">
+                            </div>
+                            <div class="left">
+                                <div
+                                    style="display: flex; flex-direction: row-reverse; gap: 2px; border-bottom: 1px #000004 solid;padding-bottom: 4px;">
+                                    <p class="strong">6.7</p>
+                                    <p class="small" style="align-self: end;">10/</p>
+                                </div>
+                                <p class="small" style="margin: 5px 0 0 0; padding: 7px 0 0 0;">6.5K Votes</p>
+                                <div class="imdb">IMDb</div>
+                            </div>
+                        </div>
+                        <div class="p p-" style="font-size: x-large;">دانلود فیلم The Door 2009</div>
+                        <div style="align-self: start; margin: 12px 16px;">
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/tv.svg" alt="" style="vertical-align:bottom;width: 20px;">
+                                <p class="p" style="font-size:17px;">کیفیت : 1080p BluRay</p>
+                            </div>
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/clock.svg" alt="" style="vertical-align:bottom;width: 20px;">
+                                <p class="p" style="font-size:17px;">زمان : 103 دقیقه</p>
+                            </div>
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/folder.svg" alt="" style="vertical-align:bottom; width: 20px;">
+                                <p class="p" style="font-size:17px;"> ژانر : درام , رازآلود , علمی تخیلی , هیجان انگیز
+                                </p>
+                            </div>
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/director.svg" alt="" style="vertical-align:bottom; width: 20px;">
+                                <p class="p" style="font-size:17px;"> کارگردان : Anno Saul</p>
+                            </div>
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/mask.svg" alt="" style="vertical-align:bottom; width: 20px;">
+                                <p class=" p" style="font-size:17px;">ستارگان : mads mikkelsen,Jessica Schwarz,Valeria
+                                    Eisenbart</p>
+                            </div>
+                            <div style="margin-bottom:8px;">
+                                <img src="./assist/svg/internet.svg" alt="" style="vertical-align:bottom; width: 20px;">
+                                <p class=" p" style="font-size:17px;">محصول کشور : آلمان</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p" style="font-size:17px;">یک بازیگر موفق پس از مرگ ناگهانی دخترش کنترل زندگی خود
+                                را
+                                از
+                                دست می دهد. شانس دوباره ای برای شروعی جدید به او داده می شود، اما همه چیز آنطور که به
+                                نظر می
+                                رسد
+                                نیست...</p>
+                        </div>
+                        <div style="margin:12px 0 28px 0;">
+                            <p class="p">ادامه/</p>
+                            <a class="p" style="color: #eb8307;cursor: pointer;">دانلود</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
             <div class="footer">
-                <div class="telegram_instagram">
-                    <div>
-                        <img src="./assist/svg/telegram.svg" alt="">
+                <div class="int1_5">
+                    <div class="int">
+                        <div class="telegram_instagram">
+                            <div>
+                                <img src="./assist/svg/telegram.svg" alt="">
+                            </div>
+                            <div style="font-size: 3rem; color: #2f2f2f;">/</div>
+                            <div style="display: flex; flex-direction: column;">
+                                <p class="p">عضویت در کانال تلگرام</p>
+                                <p class="p" style="color: #eb8307;">TELEGRAM CHANNEL</p>
+                            </div>
+                        </div>
+                        <div class="telegram_instagram">
+                            <div>
+                                <img src="./assist/svg/instagram.svg" alt="">
+                            </div>
+                            <div style="font-size: 3rem; color: #2f2f2f;">/</div>
+                            <div style="display: flex; flex-direction: column;">
+                                <p class="p">مشاهده در اینستاگرام</p>
+                                <p class="p" style="color: #eb8307;">INSTAGRAME PAGE</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="font-size: 3rem; color: #2f2f2f;">/</div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">عضویت در کانال تلگرام</p>
-                        <p class="p" style="color: #eb8307;">TELEGRAM CHANNEL</p>
-                    </div>
-                </div>
-                <div class="telegram_instagram">
-                    <div>
-                        <img src="./assist/svg/instagram.svg" alt="">
-                    </div>
-                    <div style="font-size: 3rem; color: #2f2f2f;">/</div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">مشاهده در اینستاگرام</p>
-                        <p class="p" style="color: #eb8307;">INSTAGRAME PAGE</p>
-                    </div>
-                </div>
-                <div style="display: flex; justify-content: space-around; margin: 12px 0;">
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">دانلود فیلم</p>
-                        <p class="p p-">پخش آنلاین فیلم ها</p>
-                        <p class="p p-">250 فیلم برتر تاریخ</p>
-                        <p class="p p-">باکس آفیس </p>
-                        <p class="p p-">قوانین و مقررات</p>
-                    </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <p class="p p-">دانلود سریال</p>
-                        <p class="p p-">پخش آنلاین سریال ها</p>
-                        <p class="p p-">250 سریال برتر تاریخ</p>
-                        <p class="p p-">سوالات متداول</p>
-                        <p class="p p-">DMCA POLICY</p>
+                    <div style="display: flex; justify-content: space-around; margin: 12px 0;" class="int2">
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="" class="p ">دانلود فیلم</a>
+                            <a href="" class="p ">پخش آنلاین فیلم ها</a>
+                            <a href="" class="p ">250 فیلم برتر تاریخ</a>
+                            <a href="" class="p ">باکس آفیس </a>
+                            <a href="./rol.html" class="p ">قوانین و مقررات</a>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="" class="p ">دانلود سریال</a>
+                            <a href="" class="p ">پخش آنلاین سریال ها</a>
+                            <a href="" class="p ">250 سریال برتر تاریخ</a>
+                            <a href="" class="p ">سوالات متداول</a>
+                            <a href="" class="p ">DMCA POLICY</a>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <p class="p p-">تمامی حقوق مادی و معنوی این وبسایت محفوظ می باشدوکپی برداری به هر نحوه پیگرد قانونی خواهد داشت</p>
+                    <p class="p">تمامی حقوق مادی و معنوی این وبسایت محفوظ می باشدوکپی برداری به هر نحوه پیگرد قانونی
+                        خواهد داشت</p>
                 </div>
             </div>
         </footer>
